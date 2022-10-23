@@ -1,0 +1,138 @@
+.sidebar_area {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    color: white;
+    position: absolute;
+    left: -100%;
+    transition: 500ms;
+    z-index: 100;
+    background-color: #695B4B;
+
+
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sidebar_name_exit_area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .sidebar_name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close {
+        display: none;
+    }
+}
+
+.sidebar_show_area {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    color: white;
+    position: absolute;
+    left: 0%;
+    transition: 500ms;
+
+
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sidebar_name {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.music_library_name_artist_area {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .sidebar_area {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-y: scroll;
+        color: white;
+        position: absolute;
+        left: -100%;
+        transition: 500ms;
+        z-index: 100;
+        background-color: #695B4B;
+
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sidebar_name_exit_area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .sidebar_name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .close {
+            display: flex;
+            font-size: 2rem;
+        }
+    }
+
+    .sidebar_show_area {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 100vh;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-y: scroll;
+        color: white;
+        position: absolute;
+        left: 0%;
+        transition: 500ms;
+
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sidebar_name {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .music_library_name_artist_area {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .none {
+        display: none;
+    }
+}

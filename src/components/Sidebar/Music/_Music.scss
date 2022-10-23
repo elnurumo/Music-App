@@ -1,0 +1,24 @@
+.music_area {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(30, 143, 255, 0.443);
+    }
+
+
+    .music_library_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .music_library_name_artist_area {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,53 @@
+.header_area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+
+    .header_name {
+        font-size: 22px;
+        color: white;
+    }
+
+    .library_button {
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        border: 1px black solid;
+        font-weight: 700;
+        color: white;
+        background-color: #695B4B;
+
+        &:hover {
+            background-color: #504437;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header_area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+
+        .header_name {
+            font-size: 22px;
+            color: white;
+        }
+
+        .library_button {
+            width: 80px;
+            height: 40px;
+            cursor: pointer;
+            border: 1px black solid;
+            font-weight: 700;
+            color: white;
+            background-color: #695B4B;
+
+            &:hover {
+                background-color: #504437;
+            }
+        }
+    }
+}

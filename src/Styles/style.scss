@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: #695B4B;
+    color: white;
+}
+
+.section_area {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+// .center {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: center;
+//     width: 100%;
+// }
+
+.musics_areas {
+    width: 100%
+}
+
+.sidebar_areas {
+    width: 30%;
+}
+
+@media (max-width: 576px) {
+    .section_area {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    // .center {
+    //     display: flex;
+    //     flex-direction: row-reverse;
+    //     justify-content: center;
+    //     width: 100%;
+    // }
+
+    .musics_areas {
+        width: 100%
+    }
+
+    .sidebar_areas {
+        width: 30%;
+    }
+}
+
+
+
+
+@import "../components/Header/_Header.scss";
+@import "../components/Main/Main";
+@import "../components/Sidebar/_Sidebar.scss";
+@import "../components/Sidebar/Music/Music";

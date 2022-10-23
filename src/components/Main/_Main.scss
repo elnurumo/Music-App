@@ -1,0 +1,162 @@
+.main_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .music_move {
+
+        .music_controller_handler {
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .music_input {
+        width: 40rem;
+        cursor: pointer;
+    }
+
+    .music_image {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    .name {
+        font-size: 24px;
+        margin-top: 3rem;
+    }
+
+    .artist_name {
+        font-size: 14px;
+        margin: 1rem;
+    }
+
+    .control_area {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin-top: 3rem;
+
+        i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .volume_area {
+            display: flex;
+            align-items: center;
+            width: 1px;
+
+            .volume_change {
+                display: none;
+                cursor: pointer;
+                // font-size: 5px;
+                transition: opacity 1s ease-out;
+                opacity: 0;
+                height: 5px;
+                width: 70px;
+            }
+
+            .volume {
+                font-size: 14px;
+            }
+
+            .volume_change:hover {
+                display: inline;
+                opacity: 1;
+            }
+
+            .volume:hover+.volume_change {
+                display: inline;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .main_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .music_move {
+
+            .music_controller_handler {
+                font-family: sans-serif;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .music_input {
+            width: 20rem;
+            cursor: pointer;
+        }
+
+        .music_image {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-top: 3rem;
+        }
+
+        .artist_name {
+            font-size: 14px;
+            margin: 1rem;
+        }
+
+        .control_area {
+            display: flex;
+            justify-content: space-between;
+            width: 140px;
+            margin-top: 3rem;
+            padding: 0 0 4rem 0;
+
+            i {
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .volume_area {
+                display: flex;
+                align-items: center;
+                width: 1px;
+
+                .volume_change {
+                    display: flex;
+                    cursor: pointer;
+                    // font-size: 5px;
+                    transition: opacity 1s ease-out;
+                    opacity: 1;
+                    height: 5px;
+                    width: 70px;
+                }
+
+                .volume {
+                    font-size: 14px;
+                }
+
+                .volume_change:hover {
+                    display: inline;
+                    opacity: 1;
+                }
+
+                .volume:hover+.volume_change {
+                    display: inline;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

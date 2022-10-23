@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: #695B4B;
+  color: white;
+}
+
+.section_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.musics_areas {
+  width: 100%;
+}
+
+.sidebar_areas {
+  width: 30%;
+}
+
+@media (max-width: 576px) {
+  .section_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .musics_areas {
+    width: 100%;
+  }
+  .sidebar_areas {
+    width: 30%;
+  }
+}
+
+.header_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.header_area .header_name {
+  font-size: 22px;
+  color: white;
+}
+
+.header_area .library_button {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px black solid;
+  font-weight: 700;
+  color: white;
+  background-color: #695B4B;
+}
+
+.header_area .library_button:hover {
+  background-color: #504437;
+}
+
+@media (max-width: 576px) {
+  .header_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem;
+  }
+  .header_area .header_name {
+    font-size: 22px;
+    color: white;
+  }
+  .header_area .library_button {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px black solid;
+    font-weight: 700;
+    color: white;
+    background-color: #695B4B;
+  }
+  .header_area .library_button:hover {
+    background-color: #504437;
+  }
+}
+
+.main_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_area .music_move .music_controller_handler {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.main_area .music_input {
+  width: 40rem;
+  cursor: pointer;
+}
+
+.main_area .music_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+.main_area .name {
+  font-size: 24px;
+  margin-top: 3rem;
+}
+
+.main_area .artist_name {
+  font-size: 14px;
+  margin: 1rem;
+}
+
+.main_area .control_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  margin-top: 3rem;
+}
+
+.main_area .control_area i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main_area .control_area .volume_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1px;
+}
+
+.main_area .control_area .volume_area .volume_change {
+  display: none;
+  cursor: pointer;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 5px;
+  width: 70px;
+}
+
+.main_area .control_area .volume_area .volume {
+  font-size: 14px;
+}
+
+.main_area .control_area .volume_area .volume_change:hover {
+  display: inline;
+  opacity: 1;
+}
+
+.main_area .control_area .volume_area .volume:hover + .volume_change {
+  display: inline;
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .main_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_area .music_move .music_controller_handler {
+    font-family: sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .main_area .music_input {
+    width: 20rem;
+    cursor: pointer;
+  }
+  .main_area .music_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  .main_area .name {
+    font-size: 24px;
+    margin-top: 3rem;
+  }
+  .main_area .artist_name {
+    font-size: 14px;
+    margin: 1rem;
+  }
+  .main_area .control_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 140px;
+    margin-top: 3rem;
+    padding: 0 0 4rem 0;
+  }
+  .main_area .control_area i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .main_area .control_area .volume_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1px;
+  }
+  .main_area .control_area .volume_area .volume_change {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    opacity: 1;
+    height: 5px;
+    width: 70px;
+  }
+  .main_area .control_area .volume_area .volume {
+    font-size: 14px;
+  }
+  .main_area .control_area .volume_area .volume_change:hover {
+    display: inline;
+    opacity: 1;
+  }
+  .main_area .control_area .volume_area .volume:hover + .volume_change {
+    display: inline;
+    opacity: 1;
+  }
+}
+
+.sidebar_area {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  color: white;
+  position: absolute;
+  left: -100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: 100;
+  background-color: #695B4B;
+}
+
+.sidebar_area::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar_area .sidebar_name_exit_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.sidebar_area .sidebar_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar_area .close {
+  display: none;
+}
+
+.sidebar_show_area {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  color: white;
+  position: absolute;
+  left: 0%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.sidebar_show_area::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar_show_area .sidebar_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.music_library_name_artist_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .sidebar_area {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    color: white;
+    position: absolute;
+    left: -100%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    z-index: 100;
+    background-color: #695B4B;
+  }
+  .sidebar_area::-webkit-scrollbar {
+    display: none;
+  }
+  .sidebar_area .sidebar_name_exit_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem;
+  }
+  .sidebar_area .sidebar_name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sidebar_area .close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2rem;
+  }
+  .sidebar_show_area {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    color: white;
+    position: absolute;
+    left: 0%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .sidebar_show_area::-webkit-scrollbar {
+    display: none;
+  }
+  .sidebar_show_area .sidebar_name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .music_library_name_artist_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
+  .none {
+    display: none;
+  }
+}
+
+.music_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.music_area:hover {
+  background-color: rgba(30, 143, 255, 0.443);
+}
+
+.music_area .music_library_img {
+  width: 50px;
+  height: 50px;
+}
+
+.music_area .music_library_name_artist_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
